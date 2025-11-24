@@ -1,0 +1,7 @@
+<h1>Forecast for <%= @forecast[:postal_code] %></h1>
+<p>Temperature: <%= @forecast[:temperature_c] %> °C / <%= @forecast[:temperature_f] %> °F</p>
+<p>High: <%= @forecast[:high_c] %> °C</p>
+<p>Low: <%= @forecast[:low_c] %> °C</p>
+<p>Description: <%= @forecast[:description] %></p>
+<p>Fetched at: <%= @forecast[:fetched_at] %></p>
+<p><strong><%= @forecast[:cached] ? 'Result from cache (within 30 minutes)' : 'Fresh result' %></strong></p>
